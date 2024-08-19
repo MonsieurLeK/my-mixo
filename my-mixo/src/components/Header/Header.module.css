@@ -1,0 +1,28 @@
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    filter: drop-shadow(0 0 15px #FFFFFF);
+    animation: rollin 2s ease-out 0.3s backwards;
+}
+
+@keyframes rollin {
+    0% {
+        transform: translateY(-200%);
+        filter: drop-shadow(0 0 2px #FFFFFF);
+    }
+    50% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 2px #FFFFFF);
+    }
+    100% {
+        transform: translateX(0);
+        filter: drop-shadow(0 0 15px #FFFFFF);
+    }
+}
