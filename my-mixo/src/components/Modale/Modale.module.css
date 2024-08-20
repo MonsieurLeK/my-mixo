@@ -1,0 +1,23 @@
+.modaleButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: sticky;
+    overflow: hidden;
+    left: 80dvw;
+    top: 100px;
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.menuText {
+    position: absolute;
+    color: #FFFBF3;
+}
