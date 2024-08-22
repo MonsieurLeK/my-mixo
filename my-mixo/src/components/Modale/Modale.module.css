@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 4;
     position: sticky;
     overflow: hidden;
     left: 80dvw;
@@ -16,8 +16,69 @@
     font-family: "New Amsterdam", sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
+    animation: buttonappear 0.7s ease-out 1.2s backwards;
+}
+@keyframes buttonappear {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .menuText {
     position: absolute;
     color: #FFFBF3;
+    user-select: none;
+    transition: transform 0.3s ease;
+}
+.menuTextLeft {
+    position: absolute;
+    color: #FFFBF3;
+    user-select: none;
+    transform: translateX(-70px);
+    transition: transform 0.3s ease;
+}
+.menuCross {
+    position: absolute;
+    left: 80px;
+    transform: translateY(-3px);
+    user-select: none;
+}
+.menuContainer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    height: 90dvh;
+    width: 90dvw;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: menuappear 0.5s ease-out backwards;
+}
+
+@keyframes menuappear {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menuHidden {
+    display: none;
+}
+.menuPicture {
+    width: 100%;
 }

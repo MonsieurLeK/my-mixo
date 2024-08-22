@@ -7,3 +7,28 @@ body {
   background-color: #282c34;
   max-width: 100dvw;
 }
+.myMixoConcept {
+  border-radius: 10px;
+  padding: 10px;
+  color: #FFFBF3;
+  box-shadow: inset 1px 1px 5px #FFFBF3;
+  margin: 20px 30px 0 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.2;
+  animation: conceptappear 0.7s ease-out 1.5s backwards;
+}
+@keyframes conceptappear {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+    box-shadow: none;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    box-shadow: inset 1px 1px 5px #FFFBF3;
+  }
+}
+.slogan {
+  font-weight: 600;
+}
