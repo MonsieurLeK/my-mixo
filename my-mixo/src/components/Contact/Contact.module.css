@@ -1,0 +1,58 @@
+.contactArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0dvh;
+    left: 15px;
+    z-index: 3;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFBF3;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0 10px 5px 10px;
+    border-radius: 0 0 10px 0;
+    transform: translateY(-70px);
+    transition: transform 0.4s ease-out;
+    animation: contactappear 0.7s ease-out 1.2s backwards;
+}
+
+@keyframes contactappear {
+    from {
+        opacity: 0;
+        transform: translateX(-150px) translateY(-70px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(-70px);
+    }
+}
+
+.contactArea:hover {
+    transform: translateY(0);
+}
+.contactArea a {
+    display: block;
+    text-decoration: none;
+    color:#FFFBF3;
+}
+.contactArea img {
+    width: 20px;
+    transform: translateY(3px);
+    margin-right: 10px;
+}
+.contactTrigger {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    bottom: -25px;
+    left: 0;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
