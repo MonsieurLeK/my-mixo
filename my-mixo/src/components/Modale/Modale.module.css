@@ -7,7 +7,7 @@
     position: sticky;
     overflow: hidden;
     left: 80dvw;
-    top: 100px;
+    top: 15dvh;
     width: 60px;
     height: 60px;
     margin-top: 30px;
@@ -17,6 +17,7 @@
     font-weight: 600;
     font-size: 1.4rem;
     animation: buttonappear 0.7s ease-out 1.2s backwards;
+    cursor: pointer;
 }
 @keyframes buttonappear {
     from {
@@ -81,4 +82,33 @@
 }
 .menuPicture {
     width: 100%;
+}
+.modaleTrigger {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+@media screen and (min-width: 767px) {
+    .menuContainer {
+        width: 80dvw;
+    }
+}
+@media screen and (min-width: 900px) {
+    .menuContainer {
+        width: 50dvw;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .menuContainer {
+        width: 40dvw;
+    }
 }

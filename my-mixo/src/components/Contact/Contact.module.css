@@ -39,6 +39,9 @@
     text-decoration: none;
     color:#FFFBF3;
 }
+.contactArea a:hover {
+    text-decoration: underline;
+}
 .contactArea img {
     width: 20px;
     transform: translateY(3px);
@@ -51,9 +54,21 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     height: 30px;
-    bottom: -25px;
+    bottom: -30px;
     left: 0;
     padding: 10px;
     border-radius: 0 0 10px 10px;
     user-select: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+    .contactArea {
+        left: 70px;
+    }
+}
+@media screen and (min-width: 1023px) {
+    .contactArea {
+        left: 200px;
+    }
 }

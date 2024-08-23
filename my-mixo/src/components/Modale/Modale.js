@@ -19,8 +19,11 @@ export default function Modale() {
             <span className={styles.menuCross} >✖</span> 
             </span>
     </div>
+    <div className={isVisible ? styles.modaleTrigger : styles.menuHidden} 
+    onClick={makeDisappear} >
     <div className={isVisible ? styles.menuContainer : styles.menuHidden} >
         <img src={menuPic} alt='menu des cocktails' className={styles.menuPicture} ></img>
+    </div>
     </div>
     </>
 }

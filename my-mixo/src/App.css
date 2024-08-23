@@ -6,6 +6,7 @@
 body {
   background-color: #282c34;
   max-width: 100dvw;
+  overflow-x: hidden;
 }
 .myMixoConcept {
   border-radius: 10px;
@@ -31,4 +32,19 @@ body {
 }
 .slogan {
   font-weight: 600;
+}
+
+@media screen and (min-width: 767px) {
+  .myMixoConcept {
+    width: 75dvw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .myMixoConcept {
+    width: 50dvw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

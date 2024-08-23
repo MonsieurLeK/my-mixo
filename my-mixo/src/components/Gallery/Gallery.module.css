@@ -31,3 +31,28 @@
     scale: 1.2;
     z-index: 2;
 }
+
+@media screen and (min-width: 767px) {
+    .galleryContainer {
+        width: 80dvw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1023px) {
+    .galleryContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .galleryPic {
+        width: auto;
+        height: 35dvh;
+        border-radius: 10px;
+    }
+    .galleryPic:hover {
+        scale: 1.4;
+    }
+}
